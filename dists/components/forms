@@ -1,0 +1,84 @@
+{
+    "states":{
+        "state":{}
+    },
+    "is":"div",
+    "class":"bg-defaul w90 ma ",
+    "nodes":[
+    {
+        "is":"div",
+        "class":"g-signin2 none",
+        "props":[["data-onsuccess","onSignIn"]],
+        "nodes":["Sign Up"]
+    },
+    {
+        "is":"div",
+        "id":"signup",
+        "class":"mt-20",
+        "nodes":[
+        {
+            "is":"form",
+            "class":"flx-c ",
+            "loop":true,
+            "id":"signupForm",
+            "array":[
+            {"title":"Full Name","type":"text","name":"fullname"},
+            {"title":"Username","type":"username","name":"username"},
+            {"title":"Email","type":"email","name":"email"},
+            {"title":"Password","type":"password","name":"password"}
+            
+            ],
+            "nodes":[
+            {
+                "is":"label",
+                "class":"flx-c w80 ma @class",
+                "nodes":[
+                {"is":"span","class":"tl pd5","nodes":["@title"]},
+                {
+                    "is":"input",
+                    "class":"p10 rd bd-grey  w100 ",
+                    "props":[["name","@name"],["type","@type"]]
+                }
+                ]
+            }
+          
+            ]
+        },
+        {
+            "is":"p",
+            "class":"pt8 c-grey",
+            "nodes":["lorem ispum ultricies graecis cubilia duo affert eirmod ad reformidans corrumpit dignissim gubergren nisl interpretaris auctor placerat condimentum tempor porta"]
+        },
+        {
+            "is":"label",
+            "class":"checkbox",
+            "nodes":[
+            {
+                "is":"input",
+                "id":"checkbox",
+                "props":[["type","checkbox"]]
+            },
+            {
+                "is":"span",
+                "class":" pt8",
+                "nodes":["Agree to the Terms & Conditions"]
+            }
+            ]
+        },
+          {
+                "is":"button",
+                "class":"bg-blue p10 c-white db ma w40",
+                "nodes":[" Sign Up"],
+                "events":{"click":["@signup"]}
+            }
+        ]
+        
+    },
+    {
+        "is":"div",
+        "id":" signin",
+        "class":"",
+        "nodes":[]
+    }
+    ]
+}

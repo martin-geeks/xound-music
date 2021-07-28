@@ -1,0 +1,48 @@
+{
+    "states":{
+        "state":"",
+        "message":{"title":"Title","code":"","msg":"Details"}
+    },
+    "is":"div",
+    "class":"",
+    "nodes":[
+    {
+        "is":"h3",
+        "class":"sh-2 p10 c-blue pt13 flx-r",
+        "nodes":["Stack Trace",{"is":"i","class":" ic ic-arrow-down"}]
+    },
+    {
+        "is":"div",
+        "class":"bg-default w100 p10 flx-c",
+        "nodes":[
+            {
+                "is":"span",
+                "class":"c-alert",
+                "nodes":["Error Type: ","@message.title"]
+            },
+            {
+                "is":"span",
+                "class":"pt8 c-alert",
+                "nodes":["Message: ","@message.msg at line @message.line"]
+            }
+        ]
+    },
+    {
+        "is":"h3",
+        "class":"sh-2 p10 c-blue pt13 flx-r",
+        "nodes":["Source ",{"is":"i","class":" ic ic-arrow-down"}]
+    },
+    {
+        "is":"div",
+        "class":"bg-default w100 p10 flx-c",
+        "nodes":[
+            {
+                "is":"a",
+                "class":"c-alert pt8",
+                "nodes":["File at: ","@message.url"],
+                "props":[["href","@message.url"]]
+            }
+        ]
+       }
+    ]
+}

@@ -1,0 +1,73 @@
+@font-face {
+	font-family:BalsamiqSans ;
+	src: url("fonts/BalsamiqSans-Bold.ttf");
+}
+@font-face {
+	font-family: "BalsamiqSansItalic";
+	src: url("fonts/BalsamiqSans-Italic.ttf");
+}
+@font-face {
+	font-family: "BalsamiqSansRegular";
+	src: url("fonts/BalsamiqSans-Regular.ttf");
+}
+@font-face {
+	font-family: "BalsamiqSansBoldItalic";
+	src: url("fonts/BalsamiqSans-BoldItalic.ttf");
+}
+@font-face {
+	font-family: "DMMonoMediumItalic";
+	src: url("fonts/DMMono-MediumItalic.ttf");
+}
+@font-face {
+	font-family: "DMMonoMedium";
+	src: url("fonts/DMMono-Medium.ttf");
+}
+@font-face {
+	font-family: "DMMonoRegular";
+	src: url("fonts/DMMono-Regular.ttf");
+}
+@font-face{
+	font-family: "DMMonoLight";
+	src: url("fonts/DMMono-Light.ttf");
+}
+@font-face {
+	font-family: "DMMonoItalic";
+	src: url("fonts/DMMono-Italic.ttf");
+}
+.gfont{
+	font-family: 'BalsamiqSans', cursive;
+}
+.gfont2{
+	font-family: 'DMMonoMedium',sans-serif;
+}
+.gfont3{
+	font-family: 'DMMonoItalic',sans-serif;
+}
+.gfont4{
+	font-family: 'DMMonoRegular',sans-serif;
+}
+.gfont5{
+	font-family: 'DMMonoLight',sans-serif;
+}
+.gfont6{
+	font-family: 'DMMonoMediumItalic',sans-serif;
+}
+.gfont7{
+	font-family: 'BalsamiqSansItalic',sans-serif;
+}
+.gfont8{
+	font-family: 'BalsamiqSansBoldItalic',sans-serif;
+}
+.gfont9{
+	font-family: 'BalsamiqSansRegular',sans-serif;
+}
+.gfont10{
+ 	font-family:;
+}
+
+#title1 {
+    font-family:'Segoe UI',cursive;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-shadow:;
+}

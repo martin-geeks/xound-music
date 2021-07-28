@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+<head>
+<title> Xound Music </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name='theme-color' content='#005FFF'>
+<meta name="apple-mobile-web-app-status-bar-style" content="#005FFF">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+
+
+<script>
+    window.onerror = async (e,r,p,t) => {
+        var stackError = await loadUI('components/error',{},true);
+        UI.render(stackError,root);
+       /*let stackError = await loadUI('components/stackError',{},true);
+        UI.render(stackError,root);
+        stackError.states.message.title = e.split(':')[0];
+        stackError.states.message.msg = e.split(':')[1];
+        stackError.states.message.url = r;,
+        stackError.states.message.line = p;
+        stackError.states.message.code = t;
+        stackError.update({});
+        */
+        stackError.states.message.title = e.split(':')[0];
+        stackError.states.message.msg = e.split(':')[1];
+        stackError.states.message.url = r;
+        stackError.states.message.file = 'Unknown';
+        stackError.states.message.line = p;
+        let inputEl = document.createElement('input');
+        inputEl.type = 'file';
+        inputEl.onchange = function (){
+            alert(this);
+        };
+        inputEl.src = r;
+       /*var reader = new FileReader();
+       let x = new XMLHttpRequest();
+       x.open('get',r);
+       x.onreadystatechange = () => {
+           alert(x.responseText);
+       }
+       x.send();*/
+        stackError.update({});
+        history.pushState({component:'welcome'},'Stack Trace Error: '+e.split(':')[0],'/error');
+    };
+</script>
+
+
+<style>
+%(stem.file(/dists/css/icon))%
+%(stem.file(/dists/css/zaphy))%
+%(stem.file(/dists/css/zaphy-min))%
+%(stem.file(/dists/css/index))%
+</style>
+
+<script src="/js/moult-ui.js" ></script>
+<script>%(stem.file(/dists/js/socket.io))%</script>
+</head>
+
+<body>
+<div id="root"></div>
+<div id="popUpContainer"></div>
+
+<script src="/js/main.js" defer ></script>
+<script src="/js/index.js" defer></script>
+</body>
+
+
+</html>

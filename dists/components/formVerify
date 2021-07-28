@@ -1,0 +1,44 @@
+{
+    "states":{},
+    "is":"div",
+    "class":"",
+    "nodes":[
+    {
+        "is":"h2",
+        "class":"c-grey",
+        "nodes":["Verification"]
+    }
+    ,
+    {
+        "is":"p",
+        "class":"pt12 c-grey p10",
+        "nodes":["Enter your phone number below or ",{"is":"a","class":"pt12 c-blue","nodes":["click here"],"props":[["href","#"]]}," to cancel and proceed with an email address."]
+    },
+    {
+        "is":"label",
+        "class":"flx-r w80 mt-20 ma p10",
+        "nodes":[
+            {
+                "is":"select",
+                "class":"bg-white pt8 bb-grey ",
+                "loop":true,
+                "id":"countryCode",
+                "array":[{"country":"ZM","code":"+260"},{"country":"US","code":"+1"}],
+                "nodes":[{"is":"option","nodes":["@country (@code)"],"props":[["value","@code"]]}]
+            },
+            {
+        "is":"input",
+        "class":"bbd-grey pt12 fs-10  tc pd5 w60 c-grey",
+        "id":"phoneNumber",
+        "props":[["type","number"]]
+            }
+        ]
+    },
+    {
+                "is":"button",
+                "class":"db ma c-white bg-blue mt-10 p10 rd",
+                "nodes":["Send Code"],
+                "events":{"click":["@verifyUser"]}
+    }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "states":{
+        "state":"pt20 tc h40  c-white titleholder bg-blue w90 sh ",
+        "statet":"pt12 tl p20 c-white bg-blue  sh w100",
+        "titleState":"h20"
+    },
+    "is":"div",
+    "class":"",
+    "nodes":[
+        {
+        "is":"div",
+        "class":"@state",
+        "id":"titleholder",
+        "nodes":[
+        {
+            "is":"div",
+            "class":"@titleState c-grey"
+        },
+        {
+            "is":"h3",
+            "class":"c-g ft1 ",
+            "nodes":["Xound Music"]
+        }
+        ]
+    }
+    ]
+}

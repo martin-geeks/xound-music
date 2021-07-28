@@ -1,0 +1,41 @@
+{
+    "states":{
+        "state":"pt20 tc h50  c-white titleholder bg-blue w90 sh ",
+        "statet":"pt12 tc p10 c-white bg-blue h10 sh w100",
+        "titleState":"h20"
+    },
+    "is":"div",
+    "class":"bg-default",
+    "nodes":[
+    {
+        "is":"div",
+        "class":"w100 bg-blue h40",
+        "nodes":[
+        ""
+        ]
+    },
+    {
+        "is":"div",
+        "class":"tc ",
+        "nodes":[
+        {
+            "is":"div",
+            "class":"mt-20 ",
+            "nodes":[" Select Language "]
+        },
+        {
+            "is":"select",
+            "class":"pd5 bd-grey w40 rd c-grey gfont7 mt-5 bg-white ",
+            "loop":true,
+            "array":[{"title":"Nyanja","value":"Nyanja"},{"title":"English","value":"English"}],
+            "nodes":[
+           {"is":"option","props":[["value","@value"]],"nodes":["@title"]}
+            ],
+            "events":{
+                "change":["@changeLanguage"]
+            }
+        }
+        ]
+    }
+    ]
+}
